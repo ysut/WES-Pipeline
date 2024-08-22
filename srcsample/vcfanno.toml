@@ -1,0 +1,27 @@
+# autosome
+[[annotation]]
+file = "/betelgeuse04/analysis/utsu/resources/ToMMo/tommo-54kjpn-20230626r3-GRCh37_lifted_from_GRCh38-af-autosome.vcf.fix.gz"
+fields = ["AF"]
+ops= ["self"]
+names= ["ToMMo54KJPN_lifted37_AF"]
+
+# PAR2
+[[annotation]]
+file = "/betelgeuse04/analysis/utsu/resources/ToMMo/tommo-54kjpn-20230626r3-GRCh37_lifted_from_GRCh38-af-chrX_PAR2.vcf.fix.gz"
+fields = ["AF"]
+ops = ["self"]
+names = ["ToMMo54KJPN_lifted37_AF_PAR2"]
+
+# PAR3
+[[annotation]]
+file = "/betelgeuse04/analysis/utsu/resources/ToMMo/tommo-54kjpn-20230626r3-GRCh37_lifted_from_GRCh38-af-chrX_PAR3.vcf.fix.gz"
+fields = ["AF"]
+ops = ["self"]
+names = ["ToMMo54KJPN_lifted37_AF_PAR3"]
+
+# Mitcochondria
+[[annotation]]
+file= "/betelgeuse04/analysis/utsu/resources/ToMMo/tommo-8.3kjpn-20200831-af_snvall-chrMT.vcf.gz"
+fields = ["AF_MALE", "AF_FEMALE"]
+ops = ["self", "self"]
+names = ["ToMMo8.3KJPN_AF_MALE_MT", "ToMMo8.3KJPN_AF_FEMLAE_MT"]
