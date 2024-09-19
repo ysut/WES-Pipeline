@@ -3,6 +3,7 @@
 nextflow.enable.dsl=2
 
 params.input = ''
+params.ped = ''
 params.output = "${launchDir}/results"
 params.config_dir = "${projectDir}/config"
 params.vcfanno_conf_toml = "${params.config_dir}/vcfanno/conf_dbSNP_${params.ASSEMBLY}.toml"
@@ -274,7 +275,6 @@ process JIGV {
 workflow.onComplete {
       println ""
       println "~*~*~*~*~~*~*~*~*~~*~*~*~*~~*~*~*~*~*~*~*~~*~*~*~*~*~*~*~*~"
-      println "Pipeline completed at: Completed at: 11-Sep-2024 16:21:42"
       println "Pipeline completed at: $workflow.complete"
       println "Execution time       : $workflow.duration"
       println "Execution status     : ${ workflow.success ? 'OK' : 'failed' }"
@@ -295,6 +295,7 @@ workflow {
       | flatMap { vcf -> vcf }
       | set {ch_vcfs}
     
+    // Using split files by chromosome
     ch_vcfs
       | map {it -> tuple(it, "${params.fasta}", "${params.spliceai_annotation}") }
       | SPLICEAI
