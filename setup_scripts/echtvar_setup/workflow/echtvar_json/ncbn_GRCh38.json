@@ -1,0 +1,13 @@
+[
+    {"field": "AF_JPN", "alias": "ncbn_af_jpn", multiplier: 2000000},
+    {"field": "AF_JPN_Hondo", "alias": "ncbn_af_jpn_hondo", multiplier: 2000000},
+    {"field": "AF_JPN_Ryukyu", "alias": "ncbn_af_jpn_ryukyu", multiplier: 2000000},
+
+    {"field": "AC_Hom_JPN", "alias": "ncbn_nhom_jpn"},
+    {"field": "AC_Hom_JPN_Hondo", "alias": "ncbn_nhom_jpn_hondo"},
+    {"field": "AC_Hom_JPN_Ryukyu", "alias": "ncbn_nhom_jpn_ryukyu"},
+
+    {"field": "AC_Hemi_JPN", "alias": "ncbn_nhemi_jpn"},
+    {"field": "AC_Hemi_JPN_Hondo", "alias": "ncbn_nhemi_jpn_hondo"},
+    {"field": "AC_Hemi_JPN_Ryukyu", "alias": "ncbn_nhemi_jpn_ryukyu"},
+]

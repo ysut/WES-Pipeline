@@ -1,0 +1,4 @@
+[
+    {"field": "AF_grpmax_joint", "alias": "gnomad4_af_grpmax_joint", multiplier: 2000000},
+    {"field": "nhomalt_grpmax_joint", "alias": "gnomad4_nhomalt_joint"},
+]

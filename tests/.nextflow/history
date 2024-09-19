@@ -1,0 +1,5 @@
+2024-08-21 23:16:54	-	infallible_keller	-	efa5fd7e057e19465281a5c915d45e03	f6c5b891-18c0-46f8-b82b-fcfe9ccd772e	nextflow run ../setup_workflow/mafdata.nf --output ./
+2024-08-21 23:17:29	-	backstabbing_goldwasser	-	f3bd2ef8bb50c9e705a328d523d3fa68	b2422f57-179e-47ac-9881-7feb4516de37	nextflow run ../setup_workflow/mafdata.nf --output ./
+2024-08-21 23:17:44	-	intergalactic_laplace	-	f3bd2ef8bb50c9e705a328d523d3fa68	2f9b4a4b-88d9-40b6-bcfb-2533cfb75644	nextflow run ../setup_workflow/mafdata.nf --output ./
+2024-08-21 23:17:55	1.1s	mighty_gutenberg	OK	7b1a7f12de10cb2726b2e25ad645ba82	7d168e72-42ab-4fec-86d6-a6130756f0a4	nextflow run ../setup_workflow/mafdata.nf --output ./
+2024-08-21 23:18:52	1.7s	sick_elion	ERR	724d895f9242a934f0d8448007f31e6c	4fe05eeb-6b2a-42ba-b8bf-d58131681986	nextflow run ../setup_workflow/mafdata.nf --output ./

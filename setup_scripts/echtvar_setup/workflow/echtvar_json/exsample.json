@@ -1,0 +1,26 @@
+[
+    {"field": "", "alias": ""},
+
+    {"field": "AF", "alias": "ga_af", multiplier: 2000000},
+    
+    
+    {"field": "AF_OCE", "alias": "ga_af_oce", multiplier: 2000000},
+    {"field": "HOM_OCE", "alias": "ga_nhom_oce"},
+
+
+    {"field": "AC", "alias": "gnomad_ac"},
+    {"field": "nhomalt", "alias": "gnomad_nhomalt"},
+    {"field": "AF", "alias": "gnomad_af", multiplier: 2000000},
+
+    {"field": "AC_popmax", "alias": "gnomad_popmax_ac"},
+    {"field": "AN_popmax", "alias": "gnomad_popmax_an"},
+    {"field": "nhomalt_popmax", "alias": "gnomad_popmax_nhomalt"},
+    {"field": "AF_popmax", "alias": "gnomad_popmax_af", multiplier: 2000000},
+
+    {"field": "AF_controls_and_biobanks", "alias": "gnomad_controls_and_biobanks_af", multiplier: 2000000},
+    {"field": "nhomalt_controls_and_biobanks", "alias": "gnomad_controls_and_biobanks_nhomalt"},
+
+]
+
+// MEMO
+// echtvar encode [output_echtvar_file] [config_json_file] [input_population_vcfs]

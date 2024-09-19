@@ -1,0 +1,7 @@
+# Inital annotation for dbSNP data to exclude COMMON SNPs
+
+[[annotation]]
+file="/home/utsu/resources/vcfanno_resources/dbSNP-b156/GCF_000001405.45.singleALT.common.chrmod.sort.vcf.gz"
+names=["dbSNPcommon"]
+fields=["COMMON"]
+ops=["flag"]

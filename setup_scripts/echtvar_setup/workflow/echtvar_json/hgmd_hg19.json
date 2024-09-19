@@ -1,0 +1,31 @@
+[
+    {"field": "CLASS", "alias": "hgmd_class"},
+    {"field": "DNA", "alias": "hgmd_hgvs_c"},
+    {"field": "PROT", "alias": "hgmd_hgvs_p"},
+    {"field": "CLASS", "alias": "hgmd_class"},
+
+    
+    {"field": "PHEN", "alias": "ga_af_oce", multiplier: 2000000},
+    {"field": "HOM_OCE", "alias": "ga_nhom_oce"},
+
+    {"field": "AF_NEA", "alias": "ga_af_nea", multiplier: 2000000},
+    {"field": "HOM_NEA", "alias": "ga_nhom_nea"},
+
+    {"field": "AF_SEA", "alias": "ga_af_sea", multiplier: 2000000},
+    {"field": "HOM_SEA", "alias": "ga_nhom_sea"},
+
+    {"field": "AF_SAS", "alias": "ga_af_sas", multiplier: 2000000},
+    {"field": "HOM_SAS", "alias": "ga_nhom_sas"},
+
+    {"field": "AF_AFR", "alias": "ga_af_afr", multiplier: 2000000},
+    {"field": "HOM_AFR", "alias": "ga_nhom_afr"},
+
+    {"field": "AF_AMR", "alias": "ga_af_amr", multiplier: 2000000},
+    {"field": "HOM_AMR", "alias": "ga_nhom_amr"},
+
+    {"field": "AF_WER", "alias": "ga_af_wer", multiplier: 2000000},
+    {"field": "HOM_WER", "alias": "ga_nhom_wer"},
+]
+
+// MEMO
+// echtvar encode [output_echtvar_file] [config_json_file] [input_population_vcfs]

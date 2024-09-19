@@ -1,0 +1,24 @@
+[
+    {"field": "AF", "alias": "ga_remap38_af", multiplier: 2000000},
+    
+    {"field": "AF_OCE", "alias": "ga_remap38_af_oce", multiplier: 2000000},
+    {"field": "HOM_OCE", "alias": "ga_remap38_nhom_oce"},
+
+    {"field": "AF_NEA", "alias": "ga_remap38_af_nea", multiplier: 2000000},
+    {"field": "HOM_NEA", "alias": "ga_remap38_nhom_nea"},
+
+    {"field": "AF_SEA", "alias": "ga_remap38_af_sea", multiplier: 2000000},
+    {"field": "HOM_SEA", "alias": "ga_remap38_nhom_sea"},
+
+    {"field": "AF_SAS", "alias": "ga_remap38_af_sas", multiplier: 2000000},
+    {"field": "HOM_SAS", "alias": "ga_remap38_nhom_sas"},
+
+    {"field": "AF_AFR", "alias": "ga_remap38_af_afr", multiplier: 2000000},
+    {"field": "HOM_AFR", "alias": "ga_remap38_nhom_afr"},
+
+    {"field": "AF_AMR", "alias": "ga_remap38_af_amr", multiplier: 2000000},
+    {"field": "HOM_AMR", "alias": "ga_remap38_nhom_amr"},
+
+    {"field": "AF_WER", "alias": "ga_remap38_af_wer", multiplier: 2000000},
+    {"field": "HOM_WER", "alias": "ga_remap38_nhom_wer"},
+]

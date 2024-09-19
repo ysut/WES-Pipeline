@@ -1,0 +1,27 @@
+# CCRs
+
+# TraP
+
+
+# ToMMo (vcf + csi)
+#[[annotation]]
+#file="/home/utsu/resources/vcfanno_resources/ToMMo/GRCh37/tommo-54kjpn-20230626r3-GRCh37_lifted_from_GRCh38-af-autosome.pass.vcf.gz"
+#names=[""]
+#fields=[""]
+#ops=["self"]
+
+
+# GenomeAsia (vcf + csi)
+#[[annotation]]
+#file="/home/utsu/resources/vcfanno_resources/GenomeAsia/GRCh37/GenomeAsia_snpindels_GRCh37.sort.vcf.gz"
+#names=["ga_af_OCE", "ga_hom_OCE", "ga_af_NEA", "ga_hom_NEA", "ga_af_SEA", "ga_hom_SEA", "ga_af_SAS", "ga_hom_SAS", "ga_af_AFR", "ga_hom_AFR", "ga_sas_AMR", "ga_hom_AMR", "ga_af_WER", "ga_hom_WER"]
+#fields=["AF_OCE", "HOM_OCE", "AF_NEA", "HOM_NEA", "AF_SEA", "HOM_SEA", "AF_SAS", "HOM_SAS", "AF_AFR", "HOM_AFR", "AF_AMR", "HOM_AMR", "AF_WER", "HOM_WER"]
+#ops=["self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self"]
+
+
+# ABraOM
+#[[annotation]]
+#file="/home/utsu/resources/vcfanno_resources/ABraOM/ABRaOM_60+_SABE_609_exomes_annotated.fixed.sorted.bed.gz"
+#names=['ABraOM']
+#columns=[16]
+#ops=["self"]

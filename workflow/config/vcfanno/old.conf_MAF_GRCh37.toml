@@ -1,0 +1,44 @@
+# Additional annotation for filtering by minor allele frequencies
+
+#1. RGC-ME (vcf + tbi)
+[[annotation]]
+file="/home/utsu/resources/vcfanno_resources/RGC-ME/GRCh37/rgc_me_variant_frequencies_all_20231004_GRCh37_remap.passed.sort.vcf.gz"
+names=["rgcme_AF_ALL"]
+fields=["ALL_AF"]
+ops=["self"]
+
+#2. ToMMo 54KJPN (vcf + csi)
+[[annotation]]
+file="/home/utsu/resources/vcfanno_resources/ToMMo/GRCh37/tommo-54kjpn-20230626r3-GRCh37_lifted_from_GRCh38-af-autosome.pass.vcf.gz"
+names=["tommo54kjpn_AF_ALL"]
+fields=[""]
+ops=["self"]
+
+#3. NCBN WGS (vcf + csi)
+[[annotation]]
+file="/home/utsu/resources/vcfanno_resources/NCBN-freeze2.sampleQC.GTfilter.freq.vcf.gz"
+names=["ncbnwgs_AF_JPN", "ncbnwgs_AF_Hondo", "ncbnwgs_AF_Ryukyu"]
+fields=["AF_JPN", "AF_JPN_Hondo", "AF_JPN_Ryukyu"]
+ops=["self", "self", "self"]
+
+#4 GenomeAsia (vcf + csi)
+[[annotation]]
+file="/home/utsu/resources/vcfanno_resources/GenomeAsia/GRCh37/GenomeAsia_snpindels_GRCh37.sort.vcf.gz"
+names=["ga_AF_OCE", "ga_hom_OCE", "ga_AF_NEA", "ga_hom_NEA", "ga_AF_SEA", "ga_hom_SEA", "ga_AF_SAS", "ga_hom_SAS", "ga_AF_AFR", "ga_hom_AFR", "ga_sas_AMR", "ga_hom_AMR", "ga_AF_WER", "ga_hom_WER"]
+fields=["AF_OCE", "HOM_OCE", "AF_NEA", "HOM_NEA", "AF_SEA", "HOM_SEA", "AF_SAS", "HOM_SAS", "AF_AFR", "HOM_AFR", "AF_AMR", "HOM_AMR", "AF_WER", "HOM_WER"]
+ops=["self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self", "self"]
+
+#5. ABraOM
+#[[annotation]]
+#file="/home/utsu/resources/vcfanno_resources/ABraOM/ABRaOM_60+_SABE_609_exomes_annotated.fixed.sorted.bed.gz"
+#names=['abraom_AF']
+#columns=[16]
+#ops=["self"]
+
+#6. gnomAD v4.1 (vcf + csi)
+#[[annotation]]
+#file="/home/utsu/resources/vcfanno_resources/  "
+#names=[""]
+#fields=[""]
+#ops=[""]
+

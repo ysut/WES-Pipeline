@@ -1,0 +1,8 @@
+# Additional annotation for filtering by minor allele frequencies
+
+# ABraOM
+[[annotation]]
+file="/betelgeuse04/analysis/utsu/resources/vcfanno/ABRaOM_60+_SABE_609_exomes_annotated.fixed.sorted.bed.gz"
+names=['abraom_AF']
+columns=[16]
+ops=["self"]
