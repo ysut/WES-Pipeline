@@ -2,6 +2,6 @@
 
 [[annotation]]
 file="/betelgeuse04/analysis/utsu/resources/vcfanno/dbSNP-b156/GCF_000001405.25.singleALT.common.chrmod.sort.vcf.gz"
-names=["dbSNPcommon"]
-fields=["COMMON"]
-ops=["flag"]
+names=["dbSNPcommon", "rs"]
+fields=["COMMON". "RS"]
+ops=["flag", "self"]

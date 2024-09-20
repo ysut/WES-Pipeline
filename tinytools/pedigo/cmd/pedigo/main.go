@@ -112,21 +112,10 @@ func main() {
 		}
 	}
 
-	// Write to the output file
-
 	displayAllIndividuals(&individuals)
-
+	
 	log.Println("Saving a pedigree foramt file...")
-	for _, individual := range individuals {
-		line := fmt.Sprintf("%s\t%s\t%s\t%s\t%s\t%s\n",
-			individual.FamilyID,
-			individual.IndividualID,
-			individual.FatherID,
-			individual.MotherID,
-			individual.Sex,
-			individual.Phenotype)
-		file.WriteString(line)
-	}
+	writeToFile(file, &individuals)
 	log.Printf("The file has been saved successfully\n")
 }
 
@@ -260,7 +249,7 @@ func enterSingleIndividualInfo(
 	fmt.Println("\nSelect one of [1=male; 2=female; other=unknown]")
 	form := enterSexInfo(scanner)
 	fmt.Println("\nEnter one of [-9=missing; 0=missing; 1=unaffected; 2=affected]")
-	fmt.Println("(Optional) You can also provide HPO IDs not listed above")
+	fmt.Println("(Optional) You can also provide HPO IDs instead of the numbers listed above")
 	phenotype := enterPhenotypeInfo(scanner)
 
 	individual := Individual{
@@ -281,7 +270,7 @@ func enterParentsInfo(
 
 	fmt.Println("\nEnter the father's phenotype")
 	fmt.Println("Enter one of [-9=missing; 0=missing; 1=unaffected; 2=affected]")
-	fmt.Println("(Optional) You can also provide HPO IDs not listed above")
+	fmt.Println("(Optional) You can also provide HPO IDs instead of the numbers listed above")
 	dadPhenotype := enterPhenotypeInfo(scanner)
 
 	father := Individual{
@@ -296,7 +285,7 @@ func enterParentsInfo(
 
 	fmt.Println("\nEnter the mother's phenotype")
 	fmt.Println("Enter one of [-9=missing; 0=missing; 1=unaffected; 2=affected]")
-	fmt.Println("(Optional) You can also provide HPO IDs not listed above")
+	fmt.Println("(Optional) You can also provide HPO IDs instead of the numbers listed above")
 	momPhenotype := enterPhenotypeInfo(scanner)
 
 	mother := Individual{
@@ -313,7 +302,7 @@ func enterParentsInfo(
 func enterSiblingInfo(
 	scanner *bufio.Scanner, familyID string, individuals *[]Individual, fatherID string, motherID string) {
 
-	fmt.Println("\nEnter the sibling information (ID, Sex, and Phenotype)")
+	fmt.Println("\nPlease provide the sibling information (ID, Sex, and Phenotype)")
 	fmt.Println("Enter the Sibling ID: ")
 	probandID := enterIndividualID(scanner)
 
@@ -321,7 +310,7 @@ func enterSiblingInfo(
 	form := enterSexInfo(scanner)
 
 	fmt.Println("\nEnter one of [-9=missing; 0=missing; 1=unaffected; 2=affected]")
-	fmt.Println("(Optional) You can also provide HPO IDs not listed above")
+	fmt.Println("(Optional) You can also provide HPO IDs instead of the numbers listed above")
 	sibPhenotype := enterPhenotypeInfo(scanner)
 
 	sibling := Individual{
@@ -390,5 +379,18 @@ func confirmCurrentInputs(scanner *bufio.Scanner, individuals *[]Individual, fam
 		} else {
 			return true
 		}
+	}
+}
+
+func writeToFile(file *os.File, individuals *[]Individual) {
+	for _, individual := range *individuals {
+		line := fmt.Sprintf("%s\t%s\t%s\t%s\t%s\t%s\n",
+			individual.FamilyID,
+			individual.IndividualID,
+			individual.FatherID,
+			individual.MotherID,
+			individual.Sex,
+			individual.Phenotype)
+		file.WriteString(line)
 	}
 }

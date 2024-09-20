@@ -124,11 +124,23 @@ process ECHTVAR_ANNO {
     """
 }
 
-DNA=NM_000186.4%3Ac.2392G>A;
-PROT=NP_000177.2%3Ap.D798N;
-DB=rs55931547;
-PHEN="Proliferative_glomerulonephritis_with_monoclonal_IgG_deposits";
-RANKSCORE=0.39
+
+process VCFANNO_HGMD {    
+    input:
+    path input_vcf
+
+    output:
+    path 'chr.uncommon.echtvar.hgmd.bcf'
+
+    script:
+    """
+    vcfanno \\
+      -p ${params.vcfanno_threads} \\
+      ${params.vcfanno_conf_toml} \\
+      ${input_vcf} \\
+      > chr.uncommon.hgmd.bcf
+    """
+}
 
 process MAF_FILTER {
     // Extract rare variants using bcftools by MAF cutoff
@@ -253,7 +265,6 @@ process PARSE_XHMM {
     """
 
 }
-
 
 
 process JIGV {
