@@ -47,6 +47,7 @@ func main() {
 		}
 		if inOverwrite == "n" {
 			log.Fatal("Please provide a different output file path using --output flag")
+			// Exit the program
 		} else {
 			// Remove the existing file
 			err := os.Remove(*outputFlag)
