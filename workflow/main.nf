@@ -254,8 +254,6 @@ process PARSE_XHMM {
 
 }
 
-
-
 process JIGV {
     publishDir "${params.output}/", mode: 'move'
     input:
