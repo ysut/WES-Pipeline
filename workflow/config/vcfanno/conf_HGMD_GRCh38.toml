@@ -1,0 +1,14 @@
+# HGMD annotation 
+
+[[annotation]]
+file="/betelgeuse04/analysis/utsu/resources/vcfanno/HGMD/2024.2/HGMD_Pro_2024.2_hg38.vcf.gz"
+names=["hgmd_class", "hgmd_phen", "hgmd_symbol", "hgmd_hgvsc", "hgmd_hgvsp"]
+fields=["CLASS", "PHEN", "GENE", "DNA", "PROT"]
+ops=["self", "self", "self", "self", "self"]
+
+# Examples
+# CLASS: Mutation Category
+# GENE: Gene symbol
+# DNA: e.g. NM_000186.4%3Ac.2392G>A
+# PROT: e.g. NP_000177.2%3Ap.D798N
+# PHEN: Phenotype

@@ -140,11 +140,9 @@ function main() {
   download_rule_files
   
   # Download and process dbSNP VCFs
-  # mkdir -p "Original" && cd $_
   download_vcfs
   modify_header
   extract_edit_vcf
-  # echo "Done."
 }
 
 main
