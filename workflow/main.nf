@@ -20,6 +20,17 @@ params.echtvar_genomeasia = "${params.echtvar_resources}/GenomeAsia_${params.ASS
 params.CHROMOSOME = '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,X,Y,MT'
 // params.CHROMOSOME = '18,22'
 
+process PARSE_PED_FILE {
+    input:
+    path input_ped
+
+    output:
+    // tupleかリストで，famliy_id，proband_id，father_id，mother_id返す
+    // Ifで制御必要，
+
+}
+
+
 process EXTRACT_CHR {
     // Extract chromosome from the input VCF file
     input:
@@ -253,6 +264,9 @@ process VEP {
 process PARSE_XHMM {
     input:
     path xhmm_output
+    // var proband_id を受け取って，joint callされているファイルからproband_idが
+    // 一致する行だけ抽出してproband_id.xhmm.txt　みたいのを作る
+    // outputで返す．あとでmergeする．
 
     output:
     path 'xhmm_summary.txt'
@@ -263,8 +277,9 @@ process PARSE_XHMM {
       | tail -n 1 \\
       > xhmm_summary.txt
     """
-
 }
+
+
 
 process JIGV {
     publishDir "${params.output}/", mode: 'move'
