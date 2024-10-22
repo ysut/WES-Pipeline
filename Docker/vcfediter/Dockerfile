@@ -4,7 +4,6 @@ FROM debian:bullseye-slim
 # miniforge
 ARG MINIFORGE_NAME=Miniforge3
 ARG MINIFORGE_VERSION=23.1.0-4
-ARG ENV_NAME=spliceai
 
 #2. Set environment variables
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
